@@ -23,7 +23,6 @@ namespace Calculator
                 prod *= value;
                 power = Math.Pow(value, 2);
                 powers.Add(power);
-                
             }
 
             string powerList = String.Join(", ", powers);
@@ -44,11 +43,7 @@ namespace Calculator
                     Console.WriteLine($"The product of your numbers is: {prod}");
                     Console.WriteLine($"Your numbers raised to the second power: {powerList}");
                     break;
-
             }
-            
-            
-
         }
         static void Main(string[] args)
         {
