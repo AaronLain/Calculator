@@ -47,7 +47,7 @@ namespace Calculator
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the numbers you would like to multiply:");
+            Console.WriteLine("Enter the operator, followed by the numbers you want to math:");
             var input = Console.ReadLine();
             Operator(input);
 
