@@ -47,13 +47,16 @@ namespace Calculator
         }
         static void Main(string[] args)
         {
+
             string input;
+
             do
             {
                 Console.WriteLine("Enter the operator, followed by the numbers you want to math:");
                 input = Console.ReadLine();
                 Maths(input);
-            } while (input != "exit");
+
+            } while (input != "exit" && input != "");
             
         }
     }
