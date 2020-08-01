@@ -6,7 +6,7 @@ namespace Calculator
 {
     class Program
     {
-        private static void Operator(string numbers)
+        private static void Maths(string numbers)
         {
             char op = numbers[0]; // save the operator to determine type of operation to perform
             string[] numbs = numbers.Split(","); 
@@ -47,10 +47,14 @@ namespace Calculator
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the operator, followed by the numbers you want to math:");
-            var input = Console.ReadLine();
-            Operator(input);
-
+            string input;
+            do
+            {
+                Console.WriteLine("Enter the operator, followed by the numbers you want to math:");
+                input = Console.ReadLine();
+                Maths(input);
+            } while (input != "exit");
+            
         }
     }
 }
